@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity
+//@Entity
 @Table(name = "roles")
 public class RoleEntity {
 
-    @Id
+    @EmbeddedId
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
 
